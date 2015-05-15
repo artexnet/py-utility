@@ -100,6 +100,12 @@ def is_date(_str):
     return _str is not None and bool(re.match(REGEX_DATE_PATTERN_V1, _str)) is True
 
 
+# checks if the input string is palindrome
+def is_palindrome(_str):
+    s = ''.join(char for char in _str if char.isalpha()).upper()
+    return s == s[::-1]
+
+
 # returns a string comprised of ascii letters
 def get_ascii_letters():
     return string.ascii_letters
