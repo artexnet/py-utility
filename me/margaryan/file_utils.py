@@ -31,6 +31,7 @@ def file_exists_and_readable(file_path):
         f = open(file_path, 'r')
         f.close()
     except IOError as e:
+        print e.message, e
         return False
     return True
 
@@ -41,6 +42,7 @@ def file_exists_and_writable(file_path):
         f = open(file_path, 'w')
         f.close()
     except IOError as e:
+        print e.message, e
         return False
     return True
 
@@ -48,6 +50,11 @@ def file_exists_and_writable(file_path):
 # moves source file to specified destination
 def move(src, dest):
     shutil.move(src, dest)
+
+
+# deletes specified file
+def delete(file_path):
+    os.remove(file_path)
 
 
 # makes a copy of input file in the specified location
