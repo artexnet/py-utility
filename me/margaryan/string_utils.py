@@ -121,11 +121,6 @@ def get_hexdigits():
     return string.hexdigits
 
 
-# returns a string comprised of letters
-def get_letters():
-    return string.letters
-
-
 # returns a string comprised of whitespaces
 def get_whitespaces():
     return string.whitespace

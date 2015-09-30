@@ -68,7 +68,7 @@ def resize(img_file, width, height, result_file=None):
             im.save(result_file) if result_file else im.save(img_file)
             return True
         except IOError:
-            print "unable to resize image '%s'" % img_file
+            print("unable to resize image '%s'" % img_file)
     return False
 
 
@@ -95,7 +95,7 @@ def crop(img_file, width, height, result_file=None, x_point=0, y_point=0):
             im.save(result_file) if result_file else im.save(img_file)
             return True
         except IOError:
-            print "unable to crop image '%s'" % img_file
+            print("unable to crop image '%s'" % img_file)
     return False
 
 
@@ -134,5 +134,5 @@ def adopt_to_dimension(img_file, width, height, result_file=None):
             im.save(result_file) if result_file else im.save(img_file)
             return True
         except IOError:
-            print "unable to scale and resize image '%s'" % img_file
+            print("unable to scale and resize image '%s'" % img_file)
     return False

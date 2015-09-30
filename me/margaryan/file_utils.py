@@ -31,7 +31,7 @@ def file_exists_and_readable(file_path):
         f = open(file_path, 'r')
         f.close()
     except IOError as e:
-        print e.message, e
+        print(e.message, e)
         return False
     return True
 
@@ -42,7 +42,7 @@ def file_exists_and_writable(file_path):
         f = open(file_path, 'w')
         f.close()
     except IOError as e:
-        print e.message, e
+        print(e.message, e)
         return False
     return True
 
