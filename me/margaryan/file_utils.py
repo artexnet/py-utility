@@ -20,6 +20,11 @@ def get_diff(filename1, filename2):
         return set(text_one) ^ set(text_two)
 
 
+# checks if specified directory exists
+def dir_exists(dir_path):
+    return os.path.isdir(dir_path)
+
+
 # checks if specified file exists
 def file_exists(file_path):
     return os.path.isfile(file_path)
